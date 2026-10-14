@@ -16,6 +16,10 @@
 // přepisuje. Vytvoř vedle něj na serveru „contact-local.php“ (vzor:
 // contact-local.example.php); pokud existuje, jeho hodnoty mají přednost
 // a build ho nikdy nepřepíše.
+// Plesk Git nasazuje veřejné soubory do portfolio-live/. Soukromé přihlašovací
+// údaje lze bezpečně držet o úroveň výše, mimo dokumentový kořen a Git.
+@include dirname(__DIR__, 2) . '/contact-local.php';
+// Zachováme kompatibilitu se starším hostingem, kde byl soubor vedle endpointu.
 @include __DIR__ . '/contact-local.php';
 
 // Kam poptávky chodí.
