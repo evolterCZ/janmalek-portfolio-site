@@ -1,0 +1,5 @@
+:HL["/_next/static/css/753cc25661b2dbb6.css","style"]
+:HL["/fonts/geist-latin.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
+:HL["/fonts/geist-latin-ext.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
+:HL["/fonts/geist.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projekty","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"the-euro-roadtrip","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"_JuCWxnpBjcUwEG3AzUpN"}

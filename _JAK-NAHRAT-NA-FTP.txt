@@ -1,0 +1,42 @@
+﻿JANMALEK.CZ — ASTRA / NAHRÁNÍ NA FTP
+=====================================
+
+Tento export je připravený pro / (kořen domény).
+Název místní složky web-astra není součástí webové adresy.
+
+1. Zálohujte stávající web na hostingu.
+2. Nahrajte OBSAH složky web-astra, včetně .htaccess a celého _next,
+   do kořene webu (např. www, public_html nebo web podle hostingu).
+3. Ponechte na serveru existující api/contact-local.php. Není součástí
+   exportu a obsahuje případné soukromé nastavení pošty. Nepoužívejte FTP
+   synchronizaci, která maže vzdálené soubory chybějící v místním exportu.
+4. Ověřte homepage, detail projektu, návrat zpět a kontaktní formulář.
+
+Web nepotřebuje Node.js ani databázi. Kontaktní formulář potřebuje PHP
+(ověřeno na PHP 7.4; doporučená je aktuálně podporovaná verze) s mbstring
+a funkční odesílání pošty přes mail() nebo SMTP. Pro SMTP je potřeba openssl.
+Výchozí adresát a odesílatel: ahoj@janmalek.cz.
+
+Pokud hosting vyžaduje vlastní SMTP nastavení, použijte lokální vzor
+api/contact-local.example.php a uložte jej NA SERVERU jako contact-local.php.
+Vyplněný soubor uchovávejte mimo generovanou složku web-astra. Export žádné
+heslo neobsahuje. .htaccess brání přímému přístupu k těmto konfiguračním PHP.
+
+Po nahrání otevřete /api/contact.php v prohlížeči. Správný výsledek
+je HTTP 405 a JSON {"ok":false,"code":"METHOD_NOT_ALLOWED"}. Pokud se ukáže
+PHP zdrojový kód nebo se soubor stahuje, hosting PHP nespouští.
+
+Skutečné doručení e-mailu závisí na hostingu a konfiguraci pošty; lokální
+validace je nemůže ověřit. Když endpoint chybí, selže nebo nevrátí potvrzení,
+formulář nabídne e-mail s předvyplněným textem. Tento náhradní způsob vyžaduje
+nastavenou e-mailovou aplikaci a uživatel v ní musí zprávu sám odeslat.
+
+Lokální kontrola vzhledu:
+  node scripts/serve-static.mjs web-astra 8080 /
+Tento Node server PHP nespouští; nabídka náhradního e-mailu je zde očekávaná.
+
+Nový export:
+  node scripts/build-astra.mjs
+Pro jinou podcestu je nutný nový export. Zdrojové soubory, .env, zálohy
+a node_modules na FTP nepatří. Soubory __next.* a *.txt ponechte — používá
+je klientská navigace mezi stránkami.

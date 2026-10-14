@@ -1,0 +1,30 @@
+# janmalek.cz — Astra, statický export pro Apache + PHP
+AddDefaultCharset utf-8
+DirectoryIndex index.html
+AddType image/webp .webp
+AddType font/woff2 .woff2
+ErrorDocument 404 /404.html
+
+# PHP může konfiguraci načíst přes include; přímé stažení je zakázané.
+<IfModule mod_authz_core.c>
+  <FilesMatch "^contact-local(\.example)?\.php$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 365 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|txt)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
