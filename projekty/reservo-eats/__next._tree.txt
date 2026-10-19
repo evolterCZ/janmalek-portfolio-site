@@ -1,5 +1,5 @@
-:HL["/_next/static/css/d709c41ca0b668d8.css","style"]
+:HL["/_next/static/css/c4000b02813a8544.css","style"]
 :HL["/fonts/geist-latin.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/fonts/geist-latin-ext.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/fonts/geist.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projekty","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"reservo-eats","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"whFtVF440_1rrY5x7EVtW"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projekty","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"reservo-eats","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"yvWDJrXLbYhT-8WbpoGPI"}
