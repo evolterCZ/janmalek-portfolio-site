@@ -1,5 +1,5 @@
-:HL["/_next/static/css/bffdea7dde4209f9.css","style"]
+:HL["/_next/static/css/0edc245592aa5283.css","style"]
 :HL["/fonts/geist-latin.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/fonts/geist-latin-ext.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/fonts/geist.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projekty","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"pollvera","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"vwT67WoHKjb9w_g2MNkEO"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projekty","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"pollvera","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Xa0fZ6loGaMt3YdnuvMdJ"}
